@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="400dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="376dp"
+        android:layout_height="589dp">
+
+        <EditText
+            android:id="@+id/etHoraEnsaio"
+            android:layout_width="298dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="@string/horaEnsaio"
+            android:importantForAutofill="no"
+            android:inputType="time"
+            app:layout_constraintBottom_toTopOf="@+id/spBandaEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNomeEnsaio" />
+
+        <EditText
+            android:id="@+id/etNomeEnsaio"
+            android:layout_width="298dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/nome"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/etHoraEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCodigoEnsaio" />
+
+        <TextView
+            android:id="@+id/tvTituloEnsaio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/tvTituloEnsaio"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvDataEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnConfirmarEnsaio"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/btnConfirmarEnsaio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnExcluirEnsaio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvColorEnsaio" />
+
+        <Spinner
+            android:id="@+id/spLocalEnsaio"
+            android:layout_width="298dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/spColorEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spBandaEnsaio" />
+
+        <Spinner
+            android:id="@+id/spBandaEnsaio"
+            android:layout_width="298dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/spLocalEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etHoraEnsaio" />
+
+        <TextView
+            android:id="@+id/tvColorEnsaio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="433dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="46dp"
+            android:text="@string/tvCorEnsaio"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnConfirmarEnsaio"
+            app:layout_constraintEnd_toStartOf="@+id/spColorEnsaio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spColorEnsaio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/color_blob"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/btnConfirmarEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvColorEnsaio"
+            app:layout_constraintTop_toBottomOf="@+id/spLocalEnsaio" />
+
+        <TextView
+            android:id="@+id/tvDataEnsaio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/etCodigoEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloEnsaio" />
+
+        <EditText
+            android:id="@+id/etCodigoEnsaio"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="11dp"
+            android:ems="10"
+            android:hint="@string/codigo"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/etNomeEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataEnsaio" />
+
+        <Button
+            android:id="@+id/btnExcluirEnsaio"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="13dp"
+            android:text="@string/btnExcluir"
+            app:layout_constraintBottom_toBottomOf="@+id/btnConfirmarEnsaio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnConfirmarEnsaio"
+            app:layout_constraintTop_toTopOf="@+id/btnConfirmarEnsaio" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

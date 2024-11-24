@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentLocal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocalFragment">
+
+    <EditText
+        android:id="@+id/etCodigoLocal"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarLocal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeLocal"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnderecoLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBuscarLocal" />
+
+    <EditText
+        android:id="@+id/etEnderecoLocal"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="@string/enderecoLocal"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescricaoLocal"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:hint="@string/descricao"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInserirLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeLocal" />
+
+    <Button
+        android:id="@+id/btnInserirLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="93dp"
+        android:text="@string/btnInserir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEnderecoLocal" />
+
+    <Button
+        android:id="@+id/btnExcluirLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/btnExcluir"
+        app:layout_constraintStart_toStartOf="@+id/tvListarLocal"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirLocal" />
+
+    <Button
+        android:id="@+id/btnListarLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnListar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirLocal" />
+
+    <Button
+        android:id="@+id/btnModificarLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="78dp"
+        android:text="@string/btnModificar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnListarLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etDescricaoLocal" />
+
+    <Button
+        android:id="@+id/btnBuscarLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnBuscar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etCodigoLocal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvListarLocal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarLocal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

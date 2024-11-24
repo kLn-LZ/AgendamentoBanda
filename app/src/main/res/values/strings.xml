@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AgendamentoBanda</string>
+
+    <!-- Genérico -->
+    <string name="codigo">Codigo</string>
+    <string name="nome">Nome</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="descricao">Descrição</string>
+
+    <!-- Local -->
+    <string name="enderecoLocal">Endereço</string>
+
+    <!-- Calendário   -->
+    <string name="btnAgendarCalendario">Agendar</string>
+    <string name="btnConsultarCalendario">Consultar</string>
+    <string name="tvAgendamentoCalendario">Escolha um dia para cadastrar o ensaio</string>
+
+    <!-- Agendamento -->
+    <string name="tvCorEnsaio">Cor: </string>
+    <string name="horaEnsaio">Horário</string>
+    <string name="localEnsaio">Local</string>
+    <string name="btnConfirmarEnsaio">Salvar</string>
+    <string name="bandaEnsaio">Banda</string>
+    <string name="tvTituloEnsaio">Cadastre o ensaio</string>
+
+    <!-- Menu -->
+    <string name="item_banda">Banda</string>
+    <string name="item_calendario">Calendario</string>
+    <string name="item_local">Local</string>
+
+    <!-- CRUD -->
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnInserir">Inserir</string>
+    <string name="btnModificar">Modificar</string>
+    <string name="btnExcluir">Excluir</string>
+    <string name="btnListar">Listar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
